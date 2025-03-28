@@ -2,6 +2,7 @@
 # https://github.com/ISnackable/YTCubePlus/blob/main/.github/workflows/Build.yml
 
 name: Build and Release uYouEnhanced
+runs-on: self-hosted
 
 on:
   workflow_dispatch:
@@ -179,3 +180,4 @@ jobs:
           name: v${{ env.YOUTUBE_VERSION }}-${{ env.UYOU_VERSION }}-(${{ github.run_number }})
           files: main/packages/*.ipa
           draft: true
+          
